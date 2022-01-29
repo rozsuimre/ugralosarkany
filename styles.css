@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+}
+
+#game {
+    pointer-events: none;
+    margin: 0px auto;
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+#pontszam {
+    font-weight: bold;
+    width: 500px;
+    height: 30px;
+    background-color: aquamarine;
+    margin: 0px auto;
+}
+
+button {
+    position: relative;
+    left: 40%;
+    width: 100px;
+    height: 30px;
+    background-color: aquamarine;
+    margin: 0px auto;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
+
+
+#character {
+    cursor: none;
+    cursor: not-allowed;
+    width: 30px;
+    height: 40px;
+    /*background-color: red;*/
+    background-image: url("sarki.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 150px;
+
+
+}
+
+img {
+    height: 40px;
+}
+
+.animate {
+    animation: jump 1s linear;
+}
+
+#block {
+    width: 20px;
+    height: 50px;
+    /*background-color: blue;*/
+    position: relative;
+    top: 105px;
+    left: 480px;
+    /*animation: csuszik 2s infinite linear;*/
+}
+
+@keyframes csuszik {
+    0% {
+        left: 480px
+    }
+
+    100% {
+        left: -20px;
+    }
+
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 30px;
+    }
+
+    70% {
+        top: 30px;
+    }
+
+
+    100% {
+        top: 150px;
+    }
+}
